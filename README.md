@@ -5,7 +5,7 @@ A modern YouTube clone built with HTML, CSS, and JavaScript. Features include dy
 
 ---
 
-````markdown
+
 # YouTube Clone
 
 ![image](https://github.com/user-attachments/assets/8968064d-1ea8-4bcd-8640-809b81d7e71c)
@@ -40,10 +40,11 @@ A fully functional YouTube clone built using **HTML**, **CSS**, and **JavaScript
 ## Screenshots
 
 ### Light Mode  
-![Light Mode](https://via.placeholder.com/800x400?text=Light+Mode)
+![image](https://github.com/user-attachments/assets/b0ba88fd-f068-4945-9c06-c507f2b42a53)
+
 
 ### Dark Mode  
-![Dark Mode](https://via.placeholder.com/800x400?text=Dark+Mode)
+![image](https://github.com/user-attachments/assets/b069f007-56ad-4c90-8497-615fb880f16a)
 
 ### Video Player Modal  
 ![Video Player](https://via.placeholder.com/800x400?text=Video+Player)
