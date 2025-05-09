@@ -117,7 +117,7 @@ Contributions are welcome! To contribute:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-Copyright (c) 2023 Your Name
+Copyright (c) 2025 B V NAHUSH
 
 ---
 
