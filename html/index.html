@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/logo.PNG" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="search-btn"><img src="img/search.PNG" alt=""></button>
+        </div>
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+            <img src="img/grid.PNG" class="icon" alt="">
+            <img src="img/bell.PNG" class="icon" alt="">
+            <button class="theme-toggle">
+                <img src="img/sun.PNG" class="theme-icon light-icon" alt="Light Mode">
+                <img src="img/moon.PNG" class="theme-icon dark-icon" alt="Dark Mode">
+            </button>
+            <div class="user-dp">
+                <img src="img/profile-pic.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="side-bar">
+        <a href="#" class="links active"><img src="img/home.PNG" alt="">Home</a>
+        
+        <!-- Explore Section -->
+        <div class="sidebar-section">
+            <a href="#" class="links explore-link"><img src="img/explore.PNG" alt="">Explore</a>
+            <div class="explore-content">
+                <a href="#" class="sub-link trending-link">
+                    <img src="img/trending.png" alt="">
+                    <div class="sub-info">
+                        <span class="sub-title">Trending</span>
+                        <span class="sub-text">See what's trending</span>
+                    </div>
+                </a>
+                <a href="#" class="sub-link music-link">
+                    <img src="img/music.jpg" alt="">
+                    <div class="sub-info">
+                        <span class="sub-title">Music</span>
+                        <span class="sub-text">Popular music videos</span>
+                    </div>
+                </a>
+                <a href="#" class="sub-link gaming-link">
+                    <img src="img/gaming.png" alt="">
+                    <div class="sub-info">
+                        <span class="sub-title">Gaming</span>
+                        <span class="sub-text">Live streams & gameplay</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Subscriptions Section -->
+        <div class="sidebar-section">
+            <a href="#" class="links"><img src="img/subscription.PNG" alt="">Subscriptions</a>
+            <div class="subscriptions-content">
+                <a href="#" class="sub-link">
+                    <img src="img/channel1.jpg" alt="" class="channel-avatar">
+                    <div class="sub-info">
+                        <span class="sub-title">Tech Channel</span>
+                        <span class="sub-status online"></span>
+                    </div>
+                </a>
+                <a href="#" class="sub-link">
+                    <img src="img/channel2.jpg" alt="" class="channel-avatar">
+                    <div class="sub-info">
+                        <span class="sub-title">Music Channel</span>
+                        <span class="sub-status"></span>
+                    </div>
+                </a>
+                <a href="#" class="sub-link">
+                    <img src="img/channel3.jpg" alt="" class="channel-avatar">
+                    <div class="sub-info">
+                        <span class="sub-title">Gaming Channel</span>
+                        <span class="sub-status online"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <hr class="seperator">
+
+        <!-- History Section -->
+        <div class="sidebar-section">
+            <a href="#" class="links"><img src="img/history.PNG" alt="">History</a>
+            <div class="history-content">
+                <a href="#" class="sub-link">
+                    <img src="img/thumbnail1.jpg" alt="" class="history-thumbnail">
+                    <div class="sub-info">
+                        <span class="sub-title">Latest JavaScript Features</span>
+                        <span class="sub-text">Watched 2 hours ago</span>
+                    </div>
+                </a>
+                <a href="#" class="sub-link">
+                    <img src="img/thumbnail2.jpg" alt="" class="history-thumbnail">
+                    <div class="sub-info">
+                        <span class="sub-title">Web Development Tips</span>
+                        <span class="sub-text">Watched yesterday</span>
+                    </div>
+                </a>
+                <a href="#" class="sub-link">
+                    <img src="img/thumbnail3.jpg" alt="" class="history-thumbnail">
+                    <div class="sub-info">
+                        <span class="sub-title">Python Tutorial</span>
+                        <span class="sub-text">Watched 2 days ago</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="links"><img src="img/library.PNG" alt="">Library</a>
+        <a href="#" class="links"><img src="img/your-video.PNG" alt="">Your Videos</a>
+        <a href="#" class="links"><img src="img/watch-later.PNG" alt="">Watch Later</a>
+        <a href="#" class="links"><img src="img/liked video.PNG" alt="">Liked Videos</a>
+        <a href="#" class="links"><img src="img/show more.PNG" alt="">Show More</a>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button class="filter-options active">All</button>
+        <button class="filter-options">Music</button>
+        <button class="filter-options">Gaming</button>
+        <button class="filter-options">Entertainment</button>
+        <button class="filter-options">Sports</button>
+        <button class="filter-options">News</button>
+        <button class="filter-options">Education</button>
+        <button class="filter-options">Science & Tech</button>
+        <button class="filter-options">Comedy</button>
+        <button class="filter-options">Movies</button>
+    </div>
+
+    <!-- Video Player -->
+    <div class="video-player-container">
+        <div class="video-player">
+            <iframe id="video-player" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container"></div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
